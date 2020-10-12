@@ -1,0 +1,16 @@
+server:
+  port: 9191
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sampath_ad
+    username: postgres
+    password: nimda
+    platform: postgres
+  application:
+    name: sampathad
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

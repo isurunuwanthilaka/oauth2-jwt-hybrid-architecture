@@ -1,0 +1,31 @@
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth
+    username: postgres
+    password: nimda
+    platform: postgres
+  application:
+    name: authservice
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+
+security:
+  oauth2:
+    client:
+      client-id: mobile
+      client-secret: pin
+      user-authorization-uri: http://localhost:9191/oauth/authorize
+      access-token-uri: http://localhost:9191/oauth/token
+    resource:
+      token-info-uri: http://localhost:9191/oauth/check_token
+
+server:
+  servlet:
+    session:
+      cookie:
+        name: KSESSION
+
+jwt:
+  secret: 02ruefdjksdfowadjaoiwerfjawdfafa239d8ASOH#r0dbxq39u
+  expiration: 1000
