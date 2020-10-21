@@ -1,1 +1,1 @@
-# slc-architecture
+### oauth2-jwt-hybrid-architecture
