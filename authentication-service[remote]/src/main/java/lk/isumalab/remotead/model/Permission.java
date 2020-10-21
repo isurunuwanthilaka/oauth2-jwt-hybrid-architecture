@@ -1,4 +1,4 @@
-package lk.isumalab.sampathad.model;
+package lk.isumalab.remotead.model;
 
 import lombok.Data;
 

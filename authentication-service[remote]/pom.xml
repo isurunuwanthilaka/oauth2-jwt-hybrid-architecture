@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>lk.isumalab</groupId>
-    <artifactId>sampath-ad</artifactId>
+    <artifactId>remote-ad</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sampath-ad</name>
+    <name>remote-ad</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

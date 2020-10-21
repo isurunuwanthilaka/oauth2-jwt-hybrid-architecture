@@ -13,8 +13,12 @@ import java.util.List;
 @RequestMapping(value = "/services")
 public class ProfileController {
 
+    private final CustomerService customerService;
+
     @Autowired
-    private CustomerService customerService;
+    public ProfileController(CustomerService customerService) {
+        this.customerService = customerService;
+    }
 
     @RequestMapping(value = "/customers", method = RequestMethod.POST)
     @PreAuthorize("hasAuthority('create_profile')")

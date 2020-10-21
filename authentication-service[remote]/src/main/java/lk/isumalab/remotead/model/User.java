@@ -1,6 +1,7 @@
-package lk.isumalab.sampathad.model;
+package lk.isumalab.remotead.model;
 
 import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -48,7 +49,6 @@ public class User implements Serializable {
             inverseJoinColumns = {
                     @JoinColumn(name = "role_id", referencedColumnName = "id")})
     private List<Role> roles;
-
 
 
 }
